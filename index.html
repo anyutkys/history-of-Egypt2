@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Египет — Древний мир</title>
+    <link rel="stylesheet" href="19.css" />
+    <link rel="icon"
+        href="https://img.freepik.com/premium-vector/pixel-art-illustration-pyramid-building-pixelated-pyramid-monument-pyramid-building-monument-icon_1038602-2167.jpg"
+        type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Египет</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="#pyramids">Пирамиды</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li>
+                        <div class="header-search-block">
+                            <form id="search_form" action="/search" method="get">
+                                <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск по каталогу" >
+                                <button type="submit" class="header-search-submit"></button>
+                             </form>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-toggle" aria-label="Открыть меню">&#9776;</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Добро пожаловать в мир Древнего Египта</h1>
+                <p>Погрузитесь в загадки пирамид, тайны фараонов и величие Нила.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://img.tsargrad.tv/cache/9/5/Egipet.jpg/w1056h594fill.jpg" alt="Пирамида на закате" />
+            </div>
+        </div>
+    </section>
+
+    <section id="pyramids" class="container pyramids-section">
+        <h2>Величие пирамид</h2>
+        <div class="cards">
+            <article class="card">
+                <img src="https://turvopros.com/wp-content/uploads/2022/01/piramida-heopsa-1.jpg" alt="Пирамида Хеопса" />
+                <h3>Пирамида Хеопса</h3>
+                <p>Самая большая пирамида в Гизе, одно из семи чудес света.</p>
+                <a href="#" class="btn">Подробнее</a>
+            </article>
+            <article class="card">
+                <img src="https://turvopros.com/wp-content/uploads/2022/02/oblicovka-piramidy-hefrena.jpg" alt="Пирамида Хафры" />
+                <h3>Пирамида Хафры</h3>
+                <p>Вторая по величине пирамида в Гизе, рядом со знаменитым Сфинксом.</p>
+                <a href="#" class="btn">Подробнее</a>
+            </article>
+            <article class="card">
+                <img src="https://thepyramids.org/images/giza/350_002_pyramid_menkaure_damages.jpg" alt="Пирамида Менкаура" />
+                <h3>Пирамида Менкаура</h3>
+                <p>Самая маленькая из трёх пирамид Гизы, но не менее загадочная.</p>
+                <a href="#" class="btn">Подробнее</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="gallery" class="container gallery-section">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="https://cdn.travelask.ru/uploads/post/000/007/667/main_image/facebook-98d1f5b3e76e792f3af0d80db677dbcc.jpg" alt="Сфинкс" />
+            <img src="https://evisa-to-egypt.info/cdn-cgi/image/format=auto,fit=contain,width=320/images/luxor-temples-tombs.jpg" alt="Храм" />
+            <img src="https://www.shkolazhizni.ru/img/content/i181/181894_or.jpg" alt="Иероглифы" />
+        </div>
+    </section>
+
+            <script>
+
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-links_visible');
+        });
+    </script>
+    
+    <footer id="contact">
+        <div class="container footer-content">
+            <p>@ 2025 Египет — Древний мир. Все права защищены. Мы не берём ответственность за ваши жизни.</p>
+            <p>Контакты: SonyaAnnaIP@egyptworld.ru</p>
+        </div>
+    </footer>
+</body>
+
+</html>
